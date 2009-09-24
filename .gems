@@ -1,0 +1,2 @@
+twitter --version '>=0.6.15'
+haml    --version '2.2.3'
