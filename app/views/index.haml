@@ -1,0 +1,25 @@
+%html{:xmlns=> "http://www.w3.org/1999/xhtml", 'xml:lang' => "en", :lang => "en"}
+  %head
+    %meta{'http-equiv' => "Content-Type", 'content' => "text/html; charset=utf-8"}
+    %script{:type => "text/javascript", :src => "/js/jquery.js"}
+    %title Who are follow whom?
+
+  %body
+    %div{:id => :page}
+      %div{:id => :top}
+        %h1 Who are following whon?
+      %div{:id => :content}
+        %form{:method => "post", :action => "/"}
+          Are
+          %input{:type => :text, :name => "are"}
+          following
+          %input{:type => :text, :name => "follow"}
+          ?
+          %button{:type => :submit, :id => :submit} I want know now!
+        %div{:class => :result}
+          %p
+            = @friendship
+      %div{:id => :footer}
+      %script{:type => :javascript, :charset => "utf-8"}
+        :plain
+      
