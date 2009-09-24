@@ -1,13 +1,13 @@
 %html{:xmlns=> "http://www.w3.org/1999/xhtml", 'xml:lang' => "en", :lang => "en"}
   %head
     %meta{'http-equiv' => "Content-Type", 'content' => "text/html; charset=utf-8"}
-    %script{:type => "text/javascript", :src => "/js/jquery.js"}
     %title Who are follow whom?
-
+    %link{:type => "text/css", :media => "screen", :href => "/css/main.css", :rel => "stylesheet"}
+    %script{:type => "text/javascript", :src => "/js/jquery.js"}
   %body
     %div{:id => :page}
       %div{:id => :top}
-        %h1 Who are following whon?
+        %h1 Who are following whom?
       %div{:id => :content}
         %form{:method => "post", :action => "/"}
           Are
@@ -15,11 +15,10 @@
           following
           %input{:type => :text, :name => "follow"}
           ?
-          %button{:type => :submit, :id => :submit} I want know now!
-        %div{:class => :result}
-          %p
+          %div{:class=>:button}
+            %button{:type => :submit, :id => :submit} I want know now!
+        %div{:id => :result}
+          %p{:style => "text-align:center;"}
             = @friendship
       %div{:id => :footer}
-      %script{:type => :javascript, :charset => "utf-8"}
-        :plain
-      
+        
