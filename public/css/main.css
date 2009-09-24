@@ -5,7 +5,9 @@ body{background-color:#fff;width:100%;text-align:center;font-family: Helvetica, 
 #content{font-size:1.6em;text-align:center;}
 #result{font-size:1.1em;margin:40px auto;}
 #footer{}
-.button{}
+.button{margin-top:10px;}
+#submit{width: 250px;height: 60px;margin: 0;padding: 0;border: 0;background: transparent url(/img/button.png) no-repeat center top;text-indent: -1000em;cursor: pointer; /* hand-shaped cursor */
+}
 
 h1{font-size:4em; text-align:center;}
 input{font-family:Helvetica,Arial,"Free Sans",sans-serif;font-size:1.2em;padding:4px 18px;width:10em;}
