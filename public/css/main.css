@@ -1,0 +1,31 @@
+* {margin:0; padding:0;}
+body{background-color:#fff;width:100%;text-align:center;font-family: Helvetica, "MS Trebuchet", free-sans, sans-serif;}
+#page{width:950px;text-align:left;margin:15px auto; border:3px solid #749cc5; -moz-border-radius: 8px; -webkit-border-radius: 8px; background-color:#dce6ff;}
+#top{margin:40px 50px;}
+#content{font-size:1.6em;text-align:center;}
+#result{font-size:1.1em;margin:40px auto;}
+#footer{}
+.button{}
+
+h1{font-size:4em; text-align:center;}
+input{font-family:Helvetica,Arial,"Free Sans",sans-serif;font-size:1.2em;padding:4px 18px;width:10em;}
+button{}
+
+
+/*
+ %div{:id => :page}
+    %div{:id => :top}
+      %h1 Who are following whon?
+    %div{:id => :content}
+      %form{:method => "post", :action => "/"}
+        Are
+        %input{:type => :text, :name => "are"}
+        following
+        %input{:type => :text, :name => "follow"}
+        ?
+        %button{:type => :submit, :id => :submit} I want know now!
+      %div{:id => :result}
+        %p{:style => "text-align:center;"}
+          = @friendship
+    %div{:id => :footer}
+*/
