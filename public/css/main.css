@@ -9,23 +9,3 @@ body{background-color:#fff;width:100%;text-align:center;font-family: Helvetica, 
 
 h1{font-size:4em; text-align:center;}
 input{font-family:Helvetica,Arial,"Free Sans",sans-serif;font-size:1.2em;padding:4px 18px;width:10em;}
-button{}
-
-
-/*
- %div{:id => :page}
-    %div{:id => :top}
-      %h1 Who are following whon?
-    %div{:id => :content}
-      %form{:method => "post", :action => "/"}
-        Are
-        %input{:type => :text, :name => "are"}
-        following
-        %input{:type => :text, :name => "follow"}
-        ?
-        %button{:type => :submit, :id => :submit} I want know now!
-      %div{:id => :result}
-        %p{:style => "text-align:center;"}
-          = @friendship
-    %div{:id => :footer}
-*/
