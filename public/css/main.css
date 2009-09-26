@@ -11,3 +11,5 @@ body{background-color:#fff;width:100%;text-align:center;font-family: Helvetica, 
 
 h1{font-size:4em; text-align:center;}
 input{font-family:Helvetica,Arial,"Free Sans",sans-serif;font-size:1.2em;padding:4px 18px;width:10em;}
+
+.hidden {display:none;}

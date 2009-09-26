@@ -4,17 +4,15 @@
     %title Who are follow whom?
     %link{:type => "text/css", :media => "screen", :href => "/css/main.css", :rel => "stylesheet"}
     %script{:type => "text/javascript", :src => "/js/jquery.js"}
-    %script{:type=> "text/javascript"}
-      :plain
-        google_ad_client = "pub-8170271708527203";
-        google_ad_slot = "2672036792";
-        google_ad_width = 728;
-        google_ad_height = 90;
+    
   %body
     %div{:id => :page}
       %div{:id => :top}
         %h1 Who are following whom?
       %div{:id => :content}
+        %p{:class=>:hidden}
+          You want know who anyone follows on Twitter? This is a your chance of know! Try use this tool and be happy!
+          Who following is a funny method of knowledge all followers of anyone
         %form{:method => "post", :action => "/"}
           Are
           %input{:type => :text, :name => "are"}
@@ -22,12 +20,16 @@
           %input{:type => :text, :name => "follow"}
           ?
           %div{:class=>:button}
+            %script{:type=> "text/javascript"}
+              :plain
+                google_ad_client = "pub-8170271708527203";
+                google_ad_slot = "2672036792";
+                google_ad_width = 728;
+                google_ad_height = 90;
             %script{:type=>"text/javascript", :src => "http://pagead2.googlesyndication.com/pagead/show_ads.js"}
-              </script>
           %div{:class=>:button}
             %button{:type => :submit, :id => :submit} I want know now!
         %div{:id => :result}
           %p{:style => "text-align:center;"}
             = @friendship
       %div{:id => :footer}
-        
