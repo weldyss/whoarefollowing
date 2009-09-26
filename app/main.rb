@@ -21,6 +21,11 @@ post '/' do
   content_type "text/html", :charset => "utf-8"
   no_follow = "No, #{params[:are]} didn't are following #{params[:follow]}"
   following = "Yes, #{params[:are]} are following #{params[:follow]}"
-  @friendship = @client.friendship_exists?(params[:are], params[:follow]) ? following : no_follow
+  begin
+    @friendship = @client.friendship_exists?(params[:are], params[:follow]) ? following : no_follow
+    raise
+  rescue
+    @friendship = "ok, but you need say me both persons"
+  end
   haml :index
 end
